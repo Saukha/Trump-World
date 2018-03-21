@@ -13,7 +13,7 @@ from networkx.algorithms import community
 node 34 = the administrator
 node 1 = the instructor
 '''
-H=nx.read_graphml("Problem 2 - TrumpWorldGraphML.GRAPHML")
+H=nx.read_graphml("Problem2-TrumpWorld.graphml")
 degree = nx.degree(H) # degree of nodes
 #print('degrees =',degree)
 node_list = [n for (n,m) in degree]
@@ -25,7 +25,7 @@ print('degree type =',type(degree_list[0]))
 print('============')
 '''
 d = nx.degree(g)
-nx.draw(g, nodelist=d.keys(), node_size=[v * 100 for v in d.values()])
+nx.draw(g, nodelist=d.keys(), node_size=[v * 100 for v in d.values()]) # This didn't work
 '''
 print('Draw node proportion to the degree of the node')
 print(nx.info(H))
