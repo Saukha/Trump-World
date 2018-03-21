@@ -1,4 +1,4 @@
-# Map Trump World
+# Map TrumpWorld
 
 Here is more information about Trump's network: 
 
