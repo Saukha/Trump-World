@@ -1,22 +1,15 @@
-
 # coding: utf-8
-
 # In[1]:
-
 
 import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as ny
-from networkx.algorithms import community
 
-'''
-node 34 = the administrator
-node 1 = the instructor
-'''
+# read network data into graph
 H=nx.read_graphml("Problem2-TrumpWorld.graphml")
 degree = nx.degree(H) # degree of nodes
 #print('degrees =',degree)
-node_list = [n for (n,m) in degree]
+node_list = [n for (n,m) in degree] 
 degree_list = [int(m) for (n, m) in degree]
 print('node type =',type(node_list[0]))
 #print('nodes = ', node_list)
